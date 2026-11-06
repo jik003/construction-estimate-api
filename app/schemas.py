@@ -44,7 +44,7 @@ class CustomerBase(BaseModel):
 
     name: str = Field(min_length=1, max_length=50)
     phone: str
-    email: Optional[str] = Field(default=None, max_length=100)
+    email: Optional[str] = Field(default=None, max_length=254)
     address: Optional[str] = Field(default=None, max_length=200)
 
     check_phone = field_validator("phone")(_check_phone)
@@ -59,7 +59,7 @@ class CustomerUpdate(BaseModel):
 
     name: Optional[str] = Field(default=None, min_length=1, max_length=50)
     phone: Optional[str] = None
-    email: Optional[str] = Field(default=None, max_length=100)
+    email: Optional[str] = Field(default=None, max_length=254)
     address: Optional[str] = Field(default=None, max_length=200)
 
     check_phone = field_validator("phone")(_check_phone)

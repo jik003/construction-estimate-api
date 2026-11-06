@@ -10,9 +10,11 @@
 | id | INTEGER PK | 자동 증가 |
 | name | TEXT | 필수, 1~50자 |
 | phone | TEXT | 필수, 숫자와 `-`만, 숫자 9~15자리 |
-| email | TEXT | 선택 |
+| email | TEXT | 선택, 최대 254자 |
 | address | TEXT | 선택, 최대 200자 |
 | created_at | TEXT | ISO 8601, 서버가 생성 |
+
+> email 최대 길이: 경계값을 표준에 맞춰서 정했다. 254자는 이메일 주소 길이의 표준 최대값(RFC 5321 기준)이다.
 
 ### jobs (작업)
 | 컬럼 | 타입 | 규칙 |
@@ -21,7 +23,7 @@
 | customer_id | INTEGER FK | 존재하는 고객이어야 함 |
 | title | TEXT | 필수, 1~100자 |
 | job_type | TEXT | `construction` `design` `electrical` `roofing` `repair` `interior` `woodworking` 중 하나 |
-| site_address | TEXT | 필수 |
+| site_address | TEXT | 필수, 최대 200자 |
 | description | TEXT | 선택, 최대 2000자 |
 | status | TEXT | 생성 시 항상 `inquiry` |
 | scheduled_start / scheduled_end | TEXT (YYYY-MM-DD) | 선택, end ≥ start |
