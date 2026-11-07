@@ -28,6 +28,12 @@ pytest -v
 
 Use `BASE_URL=http://host:port pytest` to test another environment.
 
+## Run the Postman collection
+
+1. In Postman, **Import** both files in [`postman/`](postman/).
+2. Select the **local** environment (`base_url` = `http://127.0.0.1:8000`).
+3. With the server running, right-click the **Customers** folder → **Run**.
+
 ## Test strategy
 
 _(Week 4: describe how cases are split into happy path / negative / edge / regression, and list bugs found.)_
