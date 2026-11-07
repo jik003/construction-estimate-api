@@ -11,6 +11,9 @@ automated API test suite.
 ## Run locally
 
 ```bash
+git clone https://github.com/jik003/construction-estimate-api.git
+cd construction-estimate-api
+
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
