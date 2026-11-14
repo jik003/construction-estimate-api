@@ -1,8 +1,8 @@
 {
   "info": {
     "_postman_id": "1a370331-f5b0-4de1-8030-ac72ca3d2b01",
-    "name": "Job Estimate API",
-    "description": "API tests for the Job Estimate & Management API: customer CRUD flow with chained requests and response validation. Select the `local` environment and run the Customers folder.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "name": "Construction Estimate & Management API",
+    "description": "API tests for the Construction Estimate & Management API: customer CRUD flow with chained requests and response validation. Select the `local` environment and run the Customers folder.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [

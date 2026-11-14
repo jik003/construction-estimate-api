@@ -12,7 +12,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Job Estimate & Management API", version="0.1.0", lifespan=lifespan)
+app = FastAPI(title="Construction Estimate & Management API", version="0.1.0", lifespan=lifespan)
 app.include_router(customers.router)
 app.include_router(jobs.router)
 

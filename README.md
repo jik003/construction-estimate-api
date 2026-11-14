@@ -55,5 +55,5 @@ _(Week 4: describe how cases are split into happy path / negative / edge / regre
 
 ## Bugs found
 
-| # | Bug | Expected | Actual | Fix |
-|---|-----|----------|--------|-----|
+| # | Endpoint | Steps | Expected | Actual | Severity | Status |
+|---|----------|-------|----------|--------|----------|--------|
