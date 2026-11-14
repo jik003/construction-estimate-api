@@ -1,4 +1,6 @@
-# Job Estimate & Management API
+# Construction Estimate & Management API
+
+![tests](https://github.com/jik003/construction-estimate-api/actions/workflows/tests.yml/badge.svg)
 
 A backend for a one-person general construction business (construction, design, electrical, roofing,
 repair, interior, woodworking): customers, jobs, estimates, and job status workflow — with an
@@ -37,6 +39,21 @@ Use `BASE_URL=http://host:port pytest` to test another environment.
 2. Select the **local** environment (`base_url` = `http://127.0.0.1:8000`).
 3. With the server running, right-click the **Customers** folder → **Run**.
 
+## CI
+
+GitHub Actions ([`.github/workflows/tests.yml`](.github/workflows/tests.yml)) runs on every push to `main`
+and every pull request: it starts the API server, waits for `/health`, then runs `pytest -v`.
+
+## Troubleshooting notes
+
+| Problem | Cause | Fix |
+|---------|-------|-----|
+
 ## Test strategy
 
 _(Week 4: describe how cases are split into happy path / negative / edge / regression, and list bugs found.)_
+
+## Bugs found
+
+| # | Bug | Expected | Actual | Fix |
+|---|-----|----------|--------|-----|
